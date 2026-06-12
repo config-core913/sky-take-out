@@ -88,7 +88,8 @@ public class EmployeeController {
     }
 
     @PostMapping("/status/{status}")
-    public Result startOrStop(@PathVariable Integer status,Long id) {
+    @ApiOperation("启用禁用员工账号")
+    public Result startOrStop(@PathVariable Integer status,Long id) {   //路径参数需要加注解@PathVariable
         log.info("启用禁用员工账户：{},{}", status, id);
         employeeService.startOrStop(status,id);
         return Result.success();
