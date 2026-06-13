@@ -6,3 +6,7 @@ sky:
     database: sky_take_out
     username: root
     password: mysql123456
+  localfile:
+      upload-dir: /Users/xinzhang/Desktop/sky-take-out/uploads
+      base-url: http://localhost:8081/uploads
+
