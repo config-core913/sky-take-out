@@ -68,4 +68,12 @@ public class DishController {
         return Result.success();
     }
 
+    //菜品起售停售
+    @PutMapping("/status/{status}")
+    @ApiOperation("菜品起售停售")
+    public Result<String> startOrStop(@PathVariable Integer status,Long id) {
+        dishService.startOrStop(status,id);
+        return Result.success();
+    }
+
 }
