@@ -24,6 +24,7 @@ public class DishServiceImpl implements DishService {
 
     @Autowired
     private DishService dishService;
+
     @Autowired
     private DishMapper dishMapper;
 
@@ -45,7 +46,6 @@ public class DishServiceImpl implements DishService {
             //向口味表插入n条数据
             dishFlavorMapper.insertBatch(flavors);
         }
-
     }
 }
 
