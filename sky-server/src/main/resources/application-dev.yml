@@ -8,5 +8,5 @@ sky:
     password: mysql123456
   localfile:
       upload-dir: /Users/xinzhang/Desktop/sky-take-out/uploads
-      base-url: http://localhost:8081/uploads
+      base-url: http://localhost:8080/uploads
 
