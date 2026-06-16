@@ -9,4 +9,8 @@ sky:
   localfile:
       upload-dir: /Users/xinzhang/Desktop/sky-take-out/uploads
       base-url: http://localhost:8080/uploads
-
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 10
